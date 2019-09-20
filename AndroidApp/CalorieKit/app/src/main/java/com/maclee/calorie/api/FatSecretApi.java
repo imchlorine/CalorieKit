@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FatSecretApi {
-    private final String KEY = "92ee1c18b1ee4ffdad052865349dd91b";
-    private final String SECRET = "23de60882fae44a1bc73118b82fd8a45";
+    private final String KEY = "Your key";
+    private final String SECRET = "Your secret";
     FatSecretConnection connection;
 
     public FatSecretApi() {
