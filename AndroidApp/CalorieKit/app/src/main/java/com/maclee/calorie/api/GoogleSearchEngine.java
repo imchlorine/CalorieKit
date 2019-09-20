@@ -2,8 +2,8 @@ package com.maclee.calorie.api;
 
 public class GoogleSearchEngine {
 
-    private final String key = "AIzaSyCG1k9FXjE9dTEA3Zul0H_yqfflYvS5j1E";
-    private final String searchId = "015016294801435681717:gbdcvojkngy";
+    private final String key = "Your key";
+    private final String searchId = "Your search id";
 
     public String searchKeywords(String keywords){
         StringBuilder sb = new StringBuilder("https://www.googleapis.com/customsearch/v1?");
