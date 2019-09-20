@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WelcomeFragement">
+
+    <!--<include layout="@layout/app_toolbar"/>-->
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Why Level of Activity?"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_welcome_sub"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/text_welcome"
+        android:layout_alignStart="@id/information"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="To calculate your Basal Metabolic Rate (BMR)." />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="LEVEL OF ACTIVITY"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_loa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information"
+        android:layout_alignStart="@+id/information"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Level of activity*"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_loa"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/information"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_loa"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_level1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="Little/no exercise (sedentary)" />
+
+        <RadioButton
+            android:id="@+id/radio_level2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="Lightly active (exercise 1-3 days/week)" />
+
+        <RadioButton
+            android:id="@+id/radio_level3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="Moderately active (exercise 3-5 days/week)" />
+
+        <RadioButton
+            android:id="@+id/radio_level4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="Very active (hard exercise 6-7 days/week)" />
+
+        <RadioButton
+            android:id="@+id/radio_level5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="Extra active (very hard exercise or training)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_loa"
+        android:layout_alignStart="@+id/information"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Steps per mile*"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_spm"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_address"
+        android:layout_centerHorizontal="true"
+        android:hint="steps per mile"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btn_next_loa"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_rectangle"
+        android:text="Next"
+        android:textColor="#ffffff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber_fill" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+    </LinearLayout>
+
+
+</RelativeLayout>

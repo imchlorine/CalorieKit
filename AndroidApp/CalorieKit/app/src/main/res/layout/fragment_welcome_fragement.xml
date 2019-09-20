@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WelcomeFragement">
+
+    <!--<include layout="@layout/app_toolbar"/>-->
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Get Calories Burned Today!"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_welcome_sub"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/text_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@id/information"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="A few quick questions, so we can help you achieve your goals." />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="INFORMATION"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/information"
+        android:layout_alignStart="@id/information"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="First Name*"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_first_name"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:hint="first Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Last Name*"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_last_name"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_last_name"
+                android:layout_centerHorizontal="true"
+                android:hint="last name"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_name"
+        android:layout_alignStart="@id/information"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Gender*"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sex"
+        android:layout_alignStart="@id/information"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:textColor="#939393"/>
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textColor="#939393"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_sex"
+        android:layout_alignStart="@id/information"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:text="Date Of Birth*" />
+
+
+    <EditText
+        android:id="@+id/et_dob_info"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_dob"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/calendar"
+        android:focusable="false"
+        android:clickable="true"
+        android:editable="false"
+        android:hint="YYYY-MM-DD"
+        android:ems="10" />
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_dob_info"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/information">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Height*"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_height"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_height"
+                    android:hint="height"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_height"
+                android:layout_alignStart="@+id/information"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Weight*"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_weight"
+                    android:hint="weight"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kg"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_welcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_rectangle"
+        android:text="Next"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber_fill" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

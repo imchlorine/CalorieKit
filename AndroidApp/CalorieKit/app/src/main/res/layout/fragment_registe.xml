@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WelcomeFragement">
+
+    <!--<include layout="@layout/app_toolbar"/>-->
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Get Ready!"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_welcome_sub"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/sign_up"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/text_welcome"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="start to burn your calories now!" />
+
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="SIGN UP"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up"
+        android:layout_alignStart="@+id/sign_up"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="User Name*"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_centerHorizontal="true"
+        android:hint="login name"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username"
+        android:layout_alignStart="@+id/sign_up"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Email*"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_email"
+        android:layout_centerHorizontal="true"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_alignStart="@+id/sign_up"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Password*"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_password"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_finish_register"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_rectangle"
+        android:text="Sign up"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_fiber_fill" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/CalorieUserFacadeREST.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/Toolkit.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/FoodFacadeREST.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/Consumption.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/Food.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/ConsumptionFacadeREST.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/CredentialFacadeREST.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/CalorieUser.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/Credential.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/web/WEB-INF/glassfish-resources.xml</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/ReportFacadeREST.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/AbstractFacade.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/src/java/caloriekit/service/ApplicationConfig.java</file>
+            <file>file:/Users/maclee/NetBeansProjects/CalorieKit/web/index.html</file>
+        </group>
+    </open-files>
+</project-private>
